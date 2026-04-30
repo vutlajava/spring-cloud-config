@@ -14,5 +14,8 @@ microservice:
         uri: http://PAYMENT-SERVICE/payment/savePayment
   order-service:
     endpoints:
-      endpoint:
+      save:
         uri: http://ORDER-SERVICE/order/saveOrder
+      get:
+        uri: http://ORDER-SERVICE/order/{id}
+        
